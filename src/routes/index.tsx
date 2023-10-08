@@ -1,40 +1,48 @@
-import { component$, useSignal, useTask$, useVisibleTask$ } from "@builder.io/qwik";
+import { QwikAnimationEvent, component$, useSignal, useTask$, useVisibleTask$ } from "@builder.io/qwik";
 import { useNavigate, type DocumentHead } from "@builder.io/qwik-city";
-import { useInView } from 'framer-motion'
+import { VisibleQwik } from "~/components/isVisible/Visible.jsx";
 
 export default component$(() => 
 {
 	const navigate = useNavigate()
-	const tiltedRef = useSignal<Element>()
+	// const tiltedRef = useSignal<QwikAnimationEvent>()
 
-	const isVisible = useInView(tiltedRef)
+	const isVisible = useSignal(false)
 
-	// useVisibleTask$(({ track }) => 
+
+
+	// useVisibleTask$(() => 
 	// {
-	// 	track(isVisible)
-	// 	track(tiltedRef)
-	// 	console.log(isVisible.value)
+	// 	window.onscroll = () => 
+	// 	{
+	// 		console.log(tiltedRef.value?.)
+	// 	}
 	// })
 
-	useVisibleTask$(({ track }) => 
-	{
-		track(isVisible)
-		console.log(isVisible)
-	})
+	// // useVisibleTask$(() => 
+	// // {
+	// // 	window.onscroll = () => {
+	// // 		console.log(tiltedRef.value?.checkVisibility())
+	// // 		isVisible.value = tiltedRef.value?.checkVisibility()
+	// // 	}
+	// // 	console.log(isVisible.value)
+	// // })
 
-	useVisibleTask$(() => 
-	{
-		tiltedRef.value?.scrollIntoView({behavior: 'smooth'})
-		isVisible.value = tiltedRef.value?.checkVisibility()
-	})
+	// useVisibleTask$(() => 
+	// {
+	// 	tiltedRef.value?.scrollIntoView({behavior: 'smooth'})
+	// })
 
 	return (
 		<>
 			<div style={{ height: '300vh' }}>
 				test
 			</div>
-			<div style={{ height: '100vh' }} ref={tiltedRef}>
-				testRef
+			<div onCanPlay$={() => {
+				isVisible.value = true
+				console.log('test')
+			}}>
+				test
 			</div>
 		</>
 	);
