@@ -1,0 +1,6121 @@
+:root
+{
+	--Sonder-yellow: #F9F3D0;
+	--Sonder-orange: #E1912F;
+	--Sonder-olive: #464834;
+	--Sonder-white: #FFFDF4;
+}
+@font-face 
+{
+	font-family: Raglika;
+	src: url("./WebFonts/raglika-6yzwq.woff") format('woff');
+	src: url("./WebFonts/raglika-6yzwq.otf") format('otf');
+}
+
+@font-face
+{
+	font-family: Optima;
+	src: url("./WebFonts/OPTIMA.woff") format('woff');
+}
+
+@font-face
+{
+	font-family: OptimaB;
+	src: url("./WebFonts/OPTIMA_B.woff") format('woff');
+}
+
+html, body, #root
+{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	box-sizing: border-box;
+	background: var(--Sonder-white);
+}
+
+textarea
+{
+	resize: none;
+}
+
+.HomePageContainer
+{
+	display: flex;
+	background-image: url('./imgs/homepagebg169.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.HomePage
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 95%;
+	padding-bottom: 0;
+	margin: 0;
+	justify-content: space-between;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.IVectors
+{
+	height: 50%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-left: 10%;
+}
+
+.IVector
+{
+	width: 10%;
+	background-color: var(--Sonder-orange);
+}
+
+.IVectorTilted
+{
+	width: 10%;
+	background-color: var(--Sonder-orange);
+	transform: rotate(-20deg);
+	margin-left: 10%;
+}
+
+.HomePageBookSession
+{
+	width: 23%;
+	margin-right: 8%;
+	height: 75%;
+	border-radius: 16.875in;
+	overflow: hidden;
+	background: var(--Sonder-olive);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0 auto auto;
+}
+
+.HomePageBookSessionText
+{
+	color: var(--Sonder-yellow);
+	height: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.HomePageBookSessionText h6
+{
+	height: 100%;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 4vw; /* 101.333% */
+	margin: 0;
+	padding: 0;
+}
+
+.HomePageBookSessionButton
+{
+	height: 10%;
+	width: 60%;
+}
+
+.HomePageBookSessionButton button
+{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: normal;
+	color: var(--Sonder-yellow);
+	background: var(--Sonder-orange);
+	border: 0px;
+	outline: none;
+	cursor: pointer;
+}
+
+.HomeHeaderContainer
+{
+	display: flex;
+	flex-direction: row;
+	height: 5%;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 1.5%;
+}
+
+.HomeHeaderContent
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.HomeHeaderAnchor a
+{
+	color: var(--Sonder-yellow);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1vw; /* 100% */
+	letter-spacing: 0.25vw;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: var(--Sonder-yellow);
+	text-decoration-thickness: 0.15vw;
+	text-underline-offset: 0.2vw;
+}
+
+.TherapyImportanceContainer
+{
+	height: 55%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background: var(--Sonder-olive);
+	justify-content: space-between;
+}
+
+.TherapyImportanceTitle
+{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	text-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 7%;
+	flex-direction: column;
+}
+
+.TherapyImportanceTitle div
+{
+	color: var(--Sonder-yellow);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 3.875vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 3.5vw; /* 121.739% */
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	margin-bottom: 2%;
+
+}
+
+.TherapyImportanceTitle div span
+{
+	margin-right: 2%;
+}
+
+.TherapyImportanceDesc
+{
+	display: flex;
+	color: var(--Sonder-yellow);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.125vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.4375vw; /* 127.778% */
+	justify-content: center;
+	align-items: center;
+	margin-right: 10%;
+	width: 40%;
+}
+
+.OurServicesContainer
+{
+	height: 65.5%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--Sonder-white);
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.OurServicesHeader
+{
+	display: flex;
+	height: 10%;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.OurServicesHeader h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%; /* 121.739% */
+	margin-left: 7.6%;
+}
+
+.OurServicesItems
+{
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	min-height: 70%;
+	height: auto;
+	width: 92.4%;
+	flex: 0 0 auto;
+	margin-left: 7.6%;
+	overflow-y: hidden;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	height: 6px;
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.OurServicesItemContainer
+{
+	display: flex;
+	flex: 0 0 auto;
+	width: 20vw;
+	height: 100%;
+	flex-direction: column;
+	margin-right: 2%;
+	border-radius: 20vw 20vw 0 0;
+	background: var(--Sonder-olive);
+	justify-content: center;
+	align-items: center;
+}
+
+.OurServicesItemNumber
+{
+	height: 20%;
+	font-size: 3vw;
+	margin-top: 20%;
+	margin-bottom: 2.5%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 66px; 
+}
+
+.OurServicesItemTitle
+{
+	height: auto;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.5vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 135.714%;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+}
+
+.OurServicesItemBody
+{
+	height: 60%;
+	color: var(--Text, #90946B);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.95vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 166.667%;
+	padding: 2%;
+}
+
+.LookingForHelpContainer
+{
+	height: 65.5%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--Sonder-white);
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.LookingForHelpHeader
+{
+	display: flex;
+	height: 10%;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.LookingForHelpHeader h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%; /* 121.739% */
+	margin-left: 7.6%;
+}
+
+.LookingForHelpSearch
+{
+	height: 15%;
+	display: flex;
+	width: 84.8%;
+	margin-left: 7.6%;
+	margin-right: 7.6%;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 2%;
+}
+
+.LookingForHelpSearch input
+{
+	height: 100%;
+	width: 100%;
+	border: 0;
+	border-radius: 2in;
+	outline: none;
+	color: #90946B;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.35vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 69.231%;
+	text-indent: 1.5%;
+}
+
+.LookingForHelpSearch input::placeholder
+{
+	color: #90946B;
+}
+
+.LookingForHelpSearch img
+{
+	position: absolute;
+	align-self: center;
+	justify-self: center;
+	right: 0;
+	top: 2.3vh;
+	margin-right: 1%;
+	width: 2vw;
+	height: 2vw;
+}
+
+.LookingForHelpSearch img:hover
+{
+	cursor: pointer;
+}
+
+.LookingForHelpItemsContainer
+{
+	height: 88%;
+	display: flex;
+	flex-direction: column;
+	width: 84.8%;
+	margin-left: 7.6%;
+	margin-right: 7.6%;
+}
+
+.LookingForHelpItemsMostSearched
+{
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.95vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 166.667%;
+	margin-bottom: 0.5%;
+}
+
+.LookingForHelpItems
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	gap: 1%;
+	row-gap: 1.2vh;
+	place-items: center;
+}
+
+.LookingForHelpItems button
+{
+	display: flex;
+  	align-items: center;
+	height: 6vh;
+	width: 100%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	justify-content: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.15vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 112.5%;
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.LookingForHelpItemsButtons
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+}
+
+.LookingForHelpItemsButtons button
+{
+	height: 48%;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: max-content;
+	text-wrap: nowrap;
+}
+
+.LookingForHelpItemsFindButton
+{
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.8%;
+	cursor: pointer;
+}
+
+.LookingForHelpItemsAboutButton
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 1.8%;
+	padding-bottom: 1.8%;
+	padding-right: 3.7%;
+	padding-left: 3.7%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: auto; /* 100% */
+	letter-spacing: 0.25vw;
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.WhySonderContainer
+{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #D6DCA2;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	flex: 0 0 1;
+}
+
+.WhySonderHeader
+{
+	display: flex;
+	margin-top: 2%;
+	height: 10%;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1%;
+	flex-direction: row;
+}
+
+.WhySonderHeader h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 2.8vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%; /* 121.739% */
+	margin-left: 7.6%;
+}
+
+.WhySonderHeader h1 span
+{
+	font-family: Raglika;
+}
+
+.WhySonderItemsButtons
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 25%;
+	margin-top: 2.5%;
+}
+
+.WhySonderItemsButtons button
+{
+	height: 48%;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: max-content;
+	text-wrap: nowrap;
+}
+
+.WhySonderItemsContainer
+{
+	height: 55%;
+}
+
+.WhySonderItemsFirstRow
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 5%;
+	margin-top: 2.5%;
+}
+
+.WhySonderItemsFirstRow .WhySonderItem
+{
+	width: 25%;
+}
+
+.WhySonderItemsSecondRow
+{
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	align-self: center;
+	margin-bottom: 5%;
+	margin-bottom: 2.5%;
+}
+
+.WhySonderItemsSecondRow .WhySonderItem
+{
+	width: 50%;
+}
+
+.WhySonderItemsContainer
+{
+	display: flex;
+	flex-direction: row;
+	width: 84.8%;
+	margin-left: 7.6%;
+	margin-right: 7.6%;
+}
+
+.WhySonderItemsContainerPledge
+{
+	display: flex;
+	flex-direction: column;
+	width: 84.8%;
+	margin-left: 7.6%;
+	margin-right: 7.6%;
+}
+
+.WhySonderItem
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+}
+
+.WhySonderItemSVG
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 47.5%;
+	margin-bottom: 2.5%;
+}
+
+.WhySonderItemSVG svg
+{
+	width: 8vw;
+	height: 12vh;
+}
+
+.WhySonderItemInfo
+{
+	height: 52.5%;
+	flex-direction: column;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.WhySonderItemTitle
+{
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Optima;
+	font-size: 1.8vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 71.429%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.WhySonderItemBody
+{
+	height: auto;
+	width: 90%;
+	margin-bottom: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'DM Sans';
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 155.556%;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.WhySonderItemBookButton
+{
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.8%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+}
+
+.WhySonderItemContactButton
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 1.4%;
+	padding-bottom: 1.4%;
+	padding-right: 2.1%;
+	padding-left: 2.1%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: auto; /* 100% */
+	letter-spacing: 0.25vw;
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.MeetTheTeamContainer
+{
+	height: max-content;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--Sonder-white);
+	padding-top: 3%;
+	padding-bottom: 8%;
+	flex: 0 0 1;
+}
+
+.MeetTheTeamHeader
+{
+	display: flex;
+	margin-top: 2%;
+	height: 10%;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1%;
+	flex-direction: row;
+}
+
+.MeetTheTeamHeader h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 3vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%; /* 121.739% */
+	margin-left: 7.6%;
+}
+
+.MeetTheTeamHeader h1 span
+{
+	font-family: Raglika;
+	font-size: 3.6vw;
+}
+
+.MeetTheTeamItemsButtons
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 16.375%;
+	margin-top: 1%;
+}
+.MeetTheTeamItemsButtons button
+{
+	height: 48%;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: max-content;
+	text-wrap: nowrap;
+}
+.MeetTheTeamItemBookButton
+{
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.49%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+}
+.MeetTheTeamItemContactButton
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 1.4%;
+	padding-bottom: 1.4%;
+	padding-right: 2.1%;
+	padding-left: 2.1%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: auto; /* 100% */
+	letter-spacing: 0.25vw;
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.MeetTheTeamItemsContainer
+{
+	display: grid;
+	grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
+	grid-template-rows: auto;
+	column-gap: 2.5%;
+	row-gap: 10vh;
+	width: 85%;
+	margin-right: 7.5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	transition: all 1s;
+}
+
+.MeetTheTeamItem
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 16in 16in 0 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.MeetTheTeamItemImage
+{
+	height: 85%;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 16in 16in 0 0;
+}
+
+.MeetTheTeamItemImage img
+{
+	width: 100%;
+	box-sizing:border-box;
+	
+}
+
+.MeetTheTeamItemInfo 
+{
+	height: 13%;
+	background: #D6DCA2;
+	overflow: hidden;
+	margin-bottom: 2.5%;
+}
+
+.MeetTheTeamItemName
+{
+	height: 47.5%;
+	padding-top: 2.5%;
+	padding-left: 5%;
+	font-size: 1.6vw;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: OptimaB;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 158.333% ;
+}
+
+.MeetTheTeamItemName h1
+{
+	margin-top: 5%;
+}
+
+.MeetTheTeamItemDesc
+{
+	height: 45%;
+	font-size: 1.2vw;
+	color: #000;
+	padding-left: 5%;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60%;
+}
+
+.MeetTheTeamItemProf
+{
+	min-height: 5%;
+	height: 8%;
+	display: grid;
+	grid-template-columns: minmax(30%, 70%) minmax(30%, 70%);
+	grid-template-rows: minmax(70%, max-content) minmax(70%, max-content);
+	column-gap: 0.8vw;
+	row-gap: 0.5vw;
+}
+
+.MeetTheTeamItemProfItem
+{
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: DM Sans;
+	font-size: 0.85vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 200%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-wrap: nowrap;
+	width: auto;
+	border: 1px solid #000;
+	border-radius: 0.65rem;
+}
+
+.OurBlogItemsButtons
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 25%;
+	margin-top: 1%;
+}
+
+.OurBlogItemsButtons button
+{
+	height: 75%;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: max-content;
+	text-wrap: nowrap;
+}
+.OurBlogItemBookButton
+{
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.8%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+}
+
+.OurBlogItemContactButton
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 1.4%;
+	padding-bottom: 1.4%;
+	padding-right: 2.1%;
+	padding-left: 2.1%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: auto; /* 100% */
+	letter-spacing: 0.25vw;
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.OurBlogContainer
+{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--Sonder-white);
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+.OurBlogHeader
+{
+	display: flex;
+	height: auto;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.OurBlogHeader h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%; /* 121.739% */
+	margin-left: 7.6%;
+	margin-bottom: 0;
+}
+
+.OurBlogItems
+{
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	height: 100%;
+	width: 92.4%;
+	flex: 0 0 auto;
+	margin-left: 7.6%;
+	cursor: pointer;
+}
+
+.OurBlogItemContainer
+{
+	display: flex;
+	flex: 0 0 auto;
+	width: 20vw;
+	height: 100%;
+	flex-direction: column;
+	margin-right: 2.5%;
+	justify-content: center;
+	align-items: center;
+}
+
+.OurBlogItemImage
+{
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+}
+
+.OurBlogItemInfo
+{
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+}
+
+.OurBlogItemImage img
+{
+	width: 100%;
+	height: 80%;
+	box-sizing:border-box;
+}
+
+.OurBlogItemTitle
+{
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: OptimaB;
+	font-size: 1.5vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 3%;
+}
+
+.OurBlogItemAuthor
+{
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: OptimaB;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 3%;
+}
+
+.OurBlogItemBody
+{
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.95vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 166.667%;
+	height: auto;
+	padding-top: 1%;
+	overflow: auto;
+}
+
+.ClientsSayContainer
+{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--Sonder-white);
+	padding-top: 8%;
+	padding-bottom: 2%;
+}
+
+.ClientsSayHeader
+{
+	display: flex;
+	height: 10%;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.ClientsSayHeader h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%; /* 121.739% */
+	margin-left: 7.6%;
+}
+
+.ClientsSayItems
+{
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	height: auto;
+	width: 92.4%;
+	flex: 0 0 auto;
+	margin-left: 7.6%;
+	cursor: pointer;
+	overflow-y: hidden;
+}
+
+.ClientsSayItem
+{
+	display: flex;
+	flex: 0 0 auto;
+	width: 20vw;
+	height: 85%;
+	flex-direction: column;
+	margin-right: 2.5%;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 1%;
+	padding: 1%;
+	border: 1px solid #000;
+	box-shadow: none;
+}
+
+.ClientsSayItemRating
+{
+	height: 10%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+.ClientsSayItemRating svg
+{
+	margin-right: 2.5%;
+}
+
+.ClientsSayItemComments
+{
+	height: 70%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
+
+.ClientsSayItemCommentsTitle
+{
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.05vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+}
+
+.ClientsSayItemCommentsBody
+{
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.95vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.ClientsSayItemAuthor
+{
+	height: 20%;
+	margin-bottom: 4%;
+}
+
+.ClientsSayItemAuthorName
+{
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.95vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+	margin-bottom: 3.5%;
+}
+
+.ClientsSayItemAuthorTherapy
+{
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.95vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.FAQContainer
+{
+	min-height: 80%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--Sonder-white);
+	padding-top: 4%;
+	padding-bottom: 2%;
+	flex: 0 0 auto;
+	overflow-y: auto;
+}
+
+.FAQHeader
+{
+	display: flex;
+	height: 10%;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.FAQHeader h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%; /* 121.739% */
+	margin-left: 7.6%;
+}
+
+.FAQItems
+{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 84.8%;
+	flex: auto 0 auto;
+	margin-left: 7.6%;
+	margin-right: 7.6%;
+	cursor: pointer;
+	overflow-y: auto;
+	flex: 0 0 auto;
+	justify-content: space-around;
+}
+
+.FAQItem
+{
+	display: flex;
+	flex-direction: row;
+	min-height: 20vh;
+	width: 95%;
+}
+
+.FAQItemHeading
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.FAQItemHeadingNumber
+{
+	color: #90946B;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 2.65vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 104.167%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.FAQItemHeadingQuestion
+{
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.6vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 135.714%;
+	width: 75%;
+	text-align: start;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.FAQItemHeadingController
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.FAQItemAnswerWrapper
+{
+	display: grid;
+	grid-template-rows: 0vh;
+	overflow: hidden;
+	transition: grid-template-rows 0.2s;
+}
+
+.FAQItemAnswerWrapper.open
+{
+	grid-template-rows: 20vh;
+}
+
+.FAQItemAnswer
+{
+	min-height: 0;
+	transition: all 0.2s;
+}
+
+.FAQItemAnswer.open
+{
+	transition: all 0.2s;
+
+}
+
+.FAQItemAnswerTemp
+{
+	color: #90946B;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'DM Sans';
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 166.667%;
+	padding-left: 12%;
+	padding-right: 30%;
+	padding-bottom: 5%;
+}
+
+.HomeFooter
+{
+	height: 35%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: var(--Sonder-olive);
+}
+
+.HomeFooterInfo
+{
+	width: 22%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: 5%;
+}
+
+.HomeFooterInfoLogo svg
+{
+	height: 10vh;
+	width: 100%;
+	margin-bottom: 15%;
+}
+
+.HomeFooterInfoCopyRights
+{
+	color: #FFFDF4;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 166.667%;
+}
+
+.HomeFooterSubscribe
+{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	height: 100%;
+}
+
+.HomeFooterSubscribe label
+{
+	/* margin-left: 20%;
+	margin-bottom: 3%; */
+	color: var(--bg, #FFFDF4);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 100% ;
+	position: absolute;
+	top: 28%;
+	left: 20%;
+}
+
+.HomeFooterSubscribe input
+{
+	width: 50%;
+	height: 7.5vh;
+	text-indent: 5%;
+	/* margin-left: 20%; */
+	border-radius: 3in;
+	outline: none;
+	border: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	font-size: 0.9vw;
+	position: absolute;
+	top: 38%;
+	left: 20%;
+}
+
+.HomeFooterSubscribe input::placeholder
+{
+	color: var(--neutral-colors-text-gray, #9795B5);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 112.5%;
+}
+
+.HomeFooterSubscribeButton
+{
+	position: absolute;
+	left: 55.5%;
+	top: 40%;
+	width: 6vw;
+	background: var(--Sonder-olive);
+	border-radius: 2in;
+	height: 6vh;
+	color: var(--neutral-colors-white, #FFF);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: DM Sans;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	border: 0;
+}
+
+.HomeFooterSubscribeButton:hover
+{
+	cursor: pointer;
+}
+
+.HomeFooterSocials
+{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	height: 31.106%;
+	margin-bottom: 2.8%;
+}
+
+.HomeFooterSocialsFollowUs
+{
+	height: 35%;
+	margin-bottom: 1%;
+	color: var(--bg, #FFFDF4);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.3vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+}
+
+.HomeFooterSocialsIcons
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.HomeFooterSocialsIcons svg 
+{
+	margin-right: 3%;
+	height: 4vh;
+	width: 2.5vw;
+	cursor: pointer;
+}
+
+.PagesHeaderContainer
+{
+	display: flex;
+	flex-direction: row;
+	height: 5%;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 1.5%;
+}
+
+.PagesHeaderContent
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.PagesHeaderAnchor a
+{
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1vw; /* 100% */
+	letter-spacing: 0.25vw;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: var(--Sonder-olive);
+	text-decoration-thickness: 0.15vw;
+	text-underline-offset: 0.2vw;
+}
+
+.AboutPageContainer
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+	margin-bottom: 5%;
+}
+
+.AboutPage
+{
+	max-height: 92.8%;
+	height: 78%;
+	width: 86%;
+	margin-left: 7%;
+	margin-right: 7%;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+	margin-top: 7.2%;
+
+}
+
+.AboutPageOurStory
+{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.AboutPageOurStoryTitle
+{
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 3.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 103.704%;
+	text-transform: uppercase;
+	margin-bottom: 1%;
+	display: flex;
+}
+
+.AboutPageOurStoryDesc
+{
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	margin-bottom: 2%;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 155.556%;
+}
+
+.AboutPageDescFirstPart
+{
+	width: 49%;
+	margin-right: 1%;
+}
+
+.AboutPageDescSecPart
+{
+	width: 49%;
+	margin-left: 1%;
+}
+
+.AboutPageVideo
+{
+	height: 80%;
+	display: flex;
+	flex: 0 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.AboutPageVideo .IFrameClone
+{
+	height: 85%;
+	width: 65%;
+	margin: 0;
+	background: #D6DCA2;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1%;
+}
+
+.AboutPageVideo .IFrameClone svg:hover
+{
+	cursor: pointer;
+}
+
+.MeetTheTeamHeaderContainer
+{
+	width: 85%;
+	margin-bottom: 3.5%;
+}
+
+.MeetTheTeamHeaderDesc
+{
+	width: 40%;
+	margin-left: 7.6%;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 155.556%;
+}
+
+.MeetTheTeamHeaderFilters
+{
+	height: 30.1vh;
+	margin-right: 5%;
+	margin-bottom: 3.5%;
+	justify-content: center;
+	align-items: flex-start;
+	display: flex;
+}
+
+.MeetTheTeamHeaderFiltersInput
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+}
+
+.MeetTheTeamHeaderFiltersInput label
+{
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 128.571%;
+	text-transform: uppercase;
+	margin-right: 2%;
+	text-wrap: nowrap;
+}
+
+.MeetTheTeamHeaderFiltersInput select
+{
+	height: 4vh;
+	width: 9vw;
+	background: transparent;
+	border: 1px solid #000;
+	border-radius: 2in;
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.75vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 18px; /* 150% */
+	text-transform: uppercase;
+	outline: none;
+}
+
+.ServicesPageContainer
+{
+	height: auto !important;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+}
+
+.ServicesPageContainer .PagesHeaderContainer
+{
+	height: 4%;
+}
+
+.ServicesPage
+{
+	max-height: 92.8%;
+	height: 78%;
+	width: 86%;
+	margin-left: 7%;
+	margin-right: 7%;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+	margin-top: 7.2%;
+}
+
+.ServicesPageHeader
+{
+	height: 8%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.ServicesPageHeaderTitle
+{
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 3.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 103.704%;
+	text-transform: uppercase;
+	margin-bottom: 1%;
+	display: flex;
+}
+
+.ServicesPageItems
+{
+	height: auto !important;
+	margin-bottom: 2%;
+	margin-top: 1%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ServicesPageItemsTopPart
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	height: 50%;
+	margin-bottom: 3.5%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	column-gap: 3vw;
+}
+
+.ServicesPageItemsBotPart
+{
+	margin-top: 3.5%;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-around;
+	align-items: center;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	column-gap: 3vw;
+}
+
+.ServicesPageItems .ServicesPageItemsTopPart .OurServicesItemContainer
+{
+	width: 23vw;
+	height: 52vh;
+}
+
+.ServicesPageItems .ServicesPageItemsBotPart .OurServicesItemContainer
+{
+	width: 23vw;
+	height: 52vh;
+}
+
+.ServicesPageItems .ServicesPageItemsBotPart .OurServicesItemContainer .OurServicesItemNumber
+{
+	font-size: 3.5vw;
+}
+
+.ServicesPageItems .ServicesPageItemsTopPart .OurServicesItemContainer .OurServicesItemNumber
+{
+	font-size: 3.5vw;
+}
+
+.ServicesPageItems .ServicesPageItemsBotPart .OurServicesItemContainer .OurServicesItemTitle
+{
+	font-size: 1.8vw;
+}
+
+.ServicesPageItems .ServicesPageItemsTopPart .OurServicesItemContainer .OurServicesItemTitle
+{
+	font-size: 1.8vw;
+}
+
+.ServicesPageItems .ServicesPageItemsTopPart .OurServicesItemContainer .OurServicesItemBody
+{
+	font-size: 1.1vw;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.ServicesPageItems .ServicesPageItemsBotPart .OurServicesItemContainer .OurServicesItemBody
+{
+	font-size: 1.1vw;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.OurServicesItemContainer:hover
+{
+	cursor: pointer;
+}
+
+.SingleServicePageContainer
+{
+	height: 90%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+}
+
+.SingleServicePage
+{
+	max-height: 92.8%;
+	height: 85%;
+	width: 86%;
+	margin-left: 7%;
+	margin-right: 7%;
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 auto;
+	margin-top: 7.2%;
+}
+
+.SingleServicePageDetails
+{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.SingleServicePageHeader
+{
+	display: flex;
+	flex-direction: column;
+	height: 30%;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.SingleServicePageHeaderTitle
+{
+	height: 45%;
+	margin-bottom: 1.5%;
+}
+
+.SingleServicePageHeaderTitle h1
+{
+	width: 100%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 3vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%;
+}
+
+.SingleServicePageHeaderTitle h1 span
+{
+	font-family: Raglika;
+}
+
+.SingleServicePageHeaderDesc
+{
+	width: 90%;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 155.556%;
+}
+
+.SingleServicePagePoints
+{
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.SingleServicePagePoints ul 
+{
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 166.667%;
+	height: 100%;
+	display: block;
+	padding-left: 1.5%;
+}
+
+.SingleServicePagePoints ul li
+{
+	width: 100%;
+	margin-top: 8%;
+	padding-left: 8%;
+	/* list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z' fill='%23E0902C'/%3E%3C/svg%3E"); */
+}
+
+.SingleServicePagePoints ul li::marker
+{
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z' fill='%23E0902C'/%3E%3C/svg%3E");
+	margin-right: 10ch;
+}
+
+.SingleServicePageBook
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	height: 35%;
+	margin-top: 1%;
+}
+
+.SingleServicePageBook button
+{
+	height: 30%;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: 40%;
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.05vw;
+	font-style: normal;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.8%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+	
+}
+
+.SingleServicePageShapes
+{
+	width: 50%;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.SingleServicePageShapes .IVectors
+{
+	width: 65%;
+	height: 65%;
+	z-index: 2;
+}
+
+.SingleServicePageShapes .IVectors .IVector, .SingleServicePageShapes .IVectors .IVectorTilted
+{
+	background: var(--Sonder-olive);
+}
+
+.ICircles
+{
+	width: 25%;
+	height: 100%;
+	z-index: 1;
+}
+
+.ICircle
+{
+	width: 14vw;
+	border-radius: 50%;
+	height: 14vw;
+	background: var(--Sonder-orange);
+	position: absolute;
+	top: 20%;
+	left: 55%;
+}
+
+.ContactUsPageContainer
+{
+	height: 160%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+}
+.ContactUsPage
+{
+	height: fit-content;
+	width: 86%;
+	margin-left: 7%;
+	margin-right: 7%;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+	margin-top: 7.2%;
+
+}
+.ContactUsPageOurStory
+{
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.ContactUsPageOurStoryTitle
+{
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 3.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 103.704%;
+	text-transform: uppercase;
+	margin-bottom: 1%;
+	display: flex;
+}
+.ContactUsPageOurStoryDesc
+{
+	display: flex;
+	flex-direction: row;
+	height: 98%;
+	margin-bottom: 2%;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 155.556%;
+}
+
+.ContactUsContact
+{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.ContactUsContactMap
+{
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	height: 100%;
+	margin-right: 5%;
+}
+
+.ContactUsContactMapImage
+{
+	height: 90%;
+	overflow: hidden;
+}
+
+.ContactUsContactMapImage img
+{
+	width: 100%;
+	height: 98.5%;
+	object-fit: fill;
+}
+
+.ContactUsContactMapInfo
+{
+	display: flex;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 138.889%;
+}
+
+.ContactUsContactMessage
+{
+	width: 72%;
+	border: 1px solid #000;
+	box-shadow: none;
+	box-sizing: border-box;
+	height: 88.5%;
+	align-self: flex-start;
+	outline: none;
+}
+
+.ContactUsContactMessageContainer
+{
+	margin: 10%;
+	height: 90%;
+}
+
+.ContactUsContactMessageTitle
+{
+	height: 15%;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 4vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 122.222%;
+}
+
+.ContactUsContactMessageInfo
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 3fr;
+	grid-auto-flow: row;
+	height: 60%;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5%;
+	row-gap: 5%;
+}
+
+.ContactUsContactMessageName
+{
+	grid-column: 1 / span 2;
+}
+
+.ContactUsContactMessageEmail
+{
+	grid-column: 3 / span 2;
+}
+
+.ContactUsContactMessageNumber
+{
+	grid-column: 1 / span 2;
+}
+
+.ContactUsContactMessageDOB
+{
+	grid-column: 3 / span 2;
+}
+
+.ContactUsContactMessageMessage
+{
+	grid-column: 1 / span 4;
+}
+
+.ContactUsContactMessageCredentials
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.ContactUsContactMessageCredentials input, .ContactUsContactMessageCredentials select, .ContactUsContactMessageCredentials textarea
+{
+	width: 95%;
+	height: 80%;
+	background: transparent;
+	border: 1px solid #000;
+	outline: none;
+	box-sizing: border-box;
+	box-shadow: none;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+	text-indent: 7%;
+}
+
+.ContactUsContactMessageNumber input
+{
+	height: 80%;
+}
+
+.react-tel-input
+{
+	height: 80% !important;
+} 
+
+.form-control
+{
+	width: 80% !important;
+}
+
+.flag-dropdown, .flag-dropdown.open 
+{
+	height: 100% !important;
+	background: transparent !important;
+	color: var(--Text, #90946B) !important;
+	font-family: Arial !important;
+	font-size: 1vw !important;
+	font-style: normal !important;
+	font-weight: 400 !important;
+	line-height: 100% !important;
+	text-indent: 7% !important;
+	border: 1px solid #000 !important;
+	outline: none !important;
+	box-sizing: border-box !important;
+	box-shadow: none !important;
+	border-radius: 0% !important;
+	border-right: 0px !important;
+}
+
+.flag-dropdown:focus
+{
+	outline: none !important;
+}
+
+.react-tel-input .selected-flag, .react-tel-input .selected-flag.open
+{
+	width: 100% !important;
+	padding: 0 !important;
+}
+
+.flag-dropdown 
+{
+	width: 20% !important;
+}
+
+.country-list li
+{
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.flag
+{
+	margin-left: 10% !important;
+}
+
+.country-list .flag
+{
+	margin-left: 2.5% !important;
+}
+
+.react-tel-input .country-list .search
+{
+	padding-left: 0 !important;
+	margin-left: 2.5% !important;
+	display: flex;
+}
+
+.ContactUsContactMessageCredentials input::placeholder
+{
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+}
+
+.ContactUsContactMessageCredentials label
+{
+	height: 25%;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	margin-bottom: 3%;
+}
+
+.ContactUsContactMessageMessage label
+{
+	height: 10%;
+}
+
+.ContactUsContactMessageMessage textarea
+{
+	width: 98.5%;
+	height: 100%;
+}
+
+.ContactUsContactMessageButton
+{
+	height: 18%;
+	margin-top: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ContactUsContactMessageButton button
+{
+	height: 50%;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: 40%;
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.05vw;
+	font-style: normal;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.8%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+}
+
+.OurSpaceContainer
+{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: #D6DCA2;
+	flex: 0 0 auto;
+}
+
+.OurSpace
+{
+	height: 90%;
+	width: 84.8%;
+	margin-right: 7.6%;
+	margin-left: 7.6%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	display: flex;
+	flex-direction: column;
+}
+
+.OurSpaceHeading
+{
+	height: 10%;
+}
+
+.OurSpaceHeading h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 3vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%;
+}
+
+.OurSpaceHeading h1 span
+{
+	font-family: Raglika;
+	font-size: 3.6vw;
+}
+
+.OurSpaceImages
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 80%;
+	justify-content: center;
+	align-items: center;
+}
+
+.OurSpaceImagesLeft
+{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.OurSpaceImagesLeft img
+{
+	object-fit: fill;
+	width: 90%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.OurSpaceImagesMid
+{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.OurSpaceImagesMid img
+{
+	height: 100%;
+	width: auto;
+	object-fit: fill;
+	width: 95%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.OurSpaceImagesRight
+{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.OurSpaceImagesRight img
+{
+	object-fit: fill;
+	width: 90%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.OurSpaceButton
+{
+	height: auto;
+	margin-bottom: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.OurSpaceButton button
+{
+	height: 100%;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: 30%;
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.4vw;
+	font-style: normal;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.8%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+}
+
+.TherapistProfileContainer
+{
+	height: max-content;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+}
+
+.TherapistProfile
+{
+	margin: 5%;
+	height: 90%;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+}
+
+.TherapistProfileImage
+{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.TherapistProfileImage img
+{
+	width: fit-content;
+	height: 100%;
+	object-fit: fill;
+}
+
+.TherapistProfileInfo
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 85%;
+	margin-top: 7.5%;
+	margin-bottom: 7.55%;
+}
+
+.TherapistProfileName
+{
+	height: 12%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 3.7vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 122.222%;
+	width: 100%;
+	text-wrap: nowrap;
+}
+
+.TherapistProfileDesc
+{
+	height: 15%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-wrap: wrap;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 143.75%;
+	width: 50%;
+}
+
+.TherapistProfileServices
+{
+	min-height: 5%;
+	max-height: 12%;
+	display: grid;
+	grid-template-columns: auto auto ;
+	grid-template-rows: auto;
+	column-gap: 0.8vw;
+	row-gap: 1vw;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	min-width: 30%;
+	width: fit-content;
+}
+
+.TherapistProfileService
+{
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: DM Sans;
+	font-size: 0.75vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 200%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-wrap: nowrap;
+	min-width: 100%;
+	border: 1px solid #000;
+	border-radius: 0.65in;
+	min-height: 50%;
+	height: 100%;
+	padding: 2%;
+	width: fit-content;
+}
+
+.TherapistProfileButton
+{
+	height: 8vh;
+	width: 42%;
+}
+
+.TherapistProfileButton button{
+	height: 100%;
+	width: 100%;
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.8%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+}
+
+.WhySonderContainerUpgraded
+{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #D6DCA2;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	flex: 0 0 1;
+}
+
+.TherapistsPledgeDesc
+{
+	height: 20%;
+	width: 35%;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: DM Sans;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 166.667%;
+	align-self: flex-start;
+	margin-left: 7.6%;
+}
+
+.TestimonialsContainer
+{
+	height: 60%;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	background: #D6DCA2;
+	justify-content: space-between;
+	padding: 5%;
+}
+
+.TestimonialsImage
+{
+	width: 12%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.TestimonialsText
+{
+	display: flex;
+	justify-content: center;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 127.778%;
+	width: 84%;
+	margin-left: 1%;
+	margin-right: 1%;
+	text-transform: uppercase;
+	margin-top: 4.2%;
+	height: 100%;
+}
+
+.TestimonialsDesc
+{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100%;
+	margin-top: 4.5%;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 112.5%;
+	width: 36%;
+	margin-right: 12%;
+	margin-left: 5%;
+}
+
+.BlogsPageContainer
+{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+	margin-bottom: 5%;
+}
+
+.BlogsMain
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	margin-top: 8%;
+}
+
+.BlogsMainImage
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.BlogsMainImage img
+{
+	width: 100%;
+	object-fit: fill;
+	border-radius: 0;
+}
+
+.BlogsPage
+{
+	max-height: 92.8%;
+	height: 78%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+}
+
+.BlogsPageOurBlogs
+{
+	height: 20%;
+	width: 86%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 7.2%;
+}
+
+.BlogsMainInfo
+{
+	background-color: #FFF1CE;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.BlogsMainInfoService
+{
+	margin-left: 7%;
+	margin-right: 7%;	
+	margin-top: 7%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 5%;
+}
+
+.BlogsMainInfoServiceName
+{
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: DM Sans;
+	font-size: 0.65vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 200%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-wrap: nowrap;
+	width: 15%;
+	height: 60%;
+	border: 1px solid #000;
+	border-radius: 0.65rem;
+	padding: 0.5%;
+	margin-right: 3%;
+}
+
+.BlogsMainInfoServiceTime
+{
+	color: #111;
+	font-family: Arial;
+	font-size: 0.85vw;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.BlogsMainInfoTitle
+{
+	margin-left: 7%;
+	margin-right: 7%;
+	color: var(--Sonder-olive, #464834);
+	font-family: Arial;
+	font-size: 2.95vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 48px */
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.BlogsMainInfoDesc
+{
+	margin-left: 7%;
+	margin-right: 7%;
+	color: var(--Sonder-olive);
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 24px */
+	height: 45%;
+	opacity: 0.65;
+}
+
+.BlogsMainInfoButton
+{
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 7%;
+	height: 10%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.BlogsMainInfoButton button
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 1.8%;
+	padding-bottom: 1.8%;
+	padding-right: 3.7%;
+	padding-left: 3.7%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: auto; /* 100% */
+	letter-spacing: 0.25vw;
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+	height: 100%;
+	width: 35%;
+}
+
+.TopicContainer
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
+	column-gap: 2.5%;
+	row-gap: 10vh;
+	width: 85%;
+	margin-right: 7.5%;
+	margin-left: 7.5%;
+	margin-bottom: 5%;
+	transition: all 1s;
+	height: max-content;
+}
+
+.TopicMain
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	margin-top: 8%;
+	border: 1px solid #90946B;
+	border-radius: 0.2rem;
+	box-shadow: none;
+	box-sizing: border-box;
+	outline: none;
+	overflow: hidden;
+}
+
+.TopicMainImage
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+}
+
+.TopicMainImage img
+{
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+	border-radius: 0;
+}
+
+.TopicMainInfo
+{
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 50%;
+}
+
+.TopicMainInfoService
+{
+	margin-left: 7%;
+	margin-right: 7%;	
+	margin-top: 7%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 15%;
+}
+
+.TopicMainInfoServiceName
+{
+	background: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: DM Sans;
+	font-size: 0.85vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 200%;
+	letter-spacing: 1px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-wrap: nowrap;
+	min-width: 30%;
+	width: auto;
+	max-height: 100%;
+	padding: 1.5%;
+	margin-right: 5%;
+	border-radius: 0.2rem;
+	color: #FFFDF4;
+}
+
+.TopicMainInfoServiceTime
+{
+	color: #111;
+	font-family: Arial;
+	font-size: 0.85vw;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.TopicMainInfoTitle
+{
+	margin-left: 7%;
+	margin-right: 7%;
+	color: var(--Sonder-olive, #464834);
+	font-family: Arial;
+	font-size: 1.75vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 48px */
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.TopicMainInfoDesc
+{
+	margin-left: 7%;
+	margin-right: 7%;
+	color: var(--Sonder-olive);
+	font-family: 'DM Sans';
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 24px */
+	height: 35%;
+	opacity: 0.7;
+	overflow: auto;
+}
+
+.TopicMainInfoButton
+{
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 7%;
+	margin-top: 5%;
+	max-height: 25%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.TopicMainInfoButton button
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 1.8%;
+	padding-bottom: 1.8%;
+	padding-right: 3.7%;
+	padding-left: 3.7%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.05vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: auto; /* 100% */
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+	height: 100%;
+	width: 35%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ArticlePageContainer
+{
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+	margin-bottom: 5%;
+}
+
+.ArticlePageMain
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	height: 110%;
+	margin-top: 2%;
+}
+
+.ArticlePageMainImage
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+	overflow: hidden;
+}
+
+.ArticlePageMainImage img
+{
+	width: 100%;
+	object-fit: fill;
+	border-radius: 0;
+}
+
+.ArticlePageMainInfo
+{
+	background-color: #FFF1CE;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 10%;
+}
+
+.ArticlePageMainInfoService
+{
+	margin-top: 3.5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 5%;
+}
+
+.ArticleMainInfoServiceName
+{
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: DM Sans;
+	font-size: 0.75vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 200%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-wrap: nowrap;
+	min-width: 8%;
+	width: auto;
+	height: 60%;
+	border: 1px solid #000;
+	border-radius: 0.65in;
+	padding: 0.2%;
+	padding-top: 0.3%;
+	padding-bottom: 0.3%;
+	margin-right: 1.2%;
+}
+
+.ArticleMainInfoServiceTime
+{
+	color: #111;
+	font-family: Arial;
+	font-size: 1vw;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ArticleMainInfoTitle
+{
+	color: var(--Sonder-olive, #464834);
+	font-family: Arial;
+	font-size: 2.95vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 48px */
+	margin-top: 1.5%;
+	margin-bottom: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ReadMoreContainer
+{
+	height: auto;
+}
+
+.ReadMoreTitle
+{
+	width: 85%;
+	margin-right: 7.5%;
+	margin-left: 7.5%;
+}
+
+.ReadMoreTitle h1
+{
+	width: 92.4%;
+	color: var(--Sonder-olive);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 3vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 121.739%;
+}
+
+.ArticleText
+{
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-family: 'DM Sans';
+	font-size: 1.3vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	opacity: 0.6;
+	margin-right: 16%;
+	margin-left: 16%;
+	margin-bottom: 10%;
+}
+
+.ArticleText br
+{
+	display: block;
+	content: " ";
+	margin-bottom: 5%;
+}
+
+.ReadMoreTitle h1 span
+{
+	font-family: Raglika;
+	font-size: 3.6vw;
+}
+
+.BookSessionContainer
+{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--Sonder-white);
+	flex: 0 0 auto;
+	margin-bottom: 15%;
+}
+
+.BookSession
+{
+	width: 86%;
+	margin-left: 7%;
+	margin-right: 7%;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+	margin-top: 7.2%;
+	border: 1px solid #000;
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+.BookSessionTitle
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 10%;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Raglika;
+	font-size: 3.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 122.222%;
+	text-transform: uppercase;
+}
+
+.BookSessionLocation
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 10%;
+}
+
+.BookSessionLocationTitle
+{
+	height: 15%;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	margin-bottom: 1%;
+}
+
+.BookSessionLocationButtons
+{
+	display: flex;
+	flex-direction: row;
+	height: 60%;
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.BookSessionInfo, .BookSessionInfoExtra, .BookSessionInfoCenter
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-auto-flow: row;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5%;
+	row-gap: 8%;
+}
+
+.BookSessionInfoName
+{
+	grid-column: 1 / span 2;
+}
+
+.BookSessionInfoEmail
+{
+	grid-column: 3 / span 2;
+}
+
+.BookSessionInfoTherapist
+{
+	grid-column: 1 / span 2;
+}
+
+.BookSessionInfoTherapyType
+{
+	grid-column: 3 / span 2;
+}
+
+.BookSessionInfoDay
+{
+	grid-column: 1 / span 2;
+}
+
+.BookSessionInfoMonth
+{
+	grid-column: 3 / span 2;
+}
+
+.BookSessionInfoType
+{
+	grid-column: 1 / span 4;
+}
+
+.BookSessionInfoType select
+{
+	width: 98%;
+	height: 100%;
+}
+
+.BookSessionInfoCredentials
+{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.BookSessionInfoCredentials input, select
+{
+	width: 95%;
+	height: 100%;
+	background: transparent;
+	border: 1px solid #90946B;
+	outline: none;
+	box-sizing: border-box;
+	box-shadow: none;
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+	text-indent: 3%;
+}
+.BookSessionInfoCredentials input::placeholder
+{
+	color: var(--Text, #90946B);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+}
+.BookSessionInfoCredentials label
+{
+	height: 15%;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	margin-bottom: 3%;
+}
+
+.BookSessionInfoType label
+{
+	margin-bottom: 1.5%;
+}
+
+.BookSessionAvailableSlots
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+	height: 10%;
+	margin-top: 2%;
+}
+
+.BookSessionAvailableSlotsTitle
+{
+	height: 15%;
+	color: var(--Sonder-olive, #464834);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	margin-bottom: 1%;
+}
+
+.BookSessionAvailableSlotsTimings
+{
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 auto;
+	width: 100%;
+	overflow: auto;
+}
+
+.BookSessionAvailableSlotsTimingsSlot
+{
+	color: var(--Sonder-olive, #464834);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.9vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+	margin-right: 1%;
+	border-radius: 2in;
+	border: 1px solid #000;
+	padding: 1%;
+	flex: 0 0 auto;
+	margin-bottom: 1%;
+}
+
+.BookSessionAvailableSlotsTimingsSlotSelected
+{
+	color: var(--Sonder-white);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 0.9vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+	margin-right: 1%;
+	border-radius: 2in;
+	border: 0px;
+	background: var(--Sonder-olive, #464834);
+	padding: 1%;
+	flex: 0 0 auto;
+	margin-bottom: 1%;
+}
+
+.BookSessionButton
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	margin-top: 2.5%;
+	height: auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+
+.BookSessionButton button
+{
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.1vw;
+	font-style: normal;
+	font-weight: 700;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	letter-spacing: 0.25vw;
+	background: var(--Sonder-olive);
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	padding: 1.49%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	cursor: pointer;
+	width: 25%;
+	text-wrap: nowrap;
+	height: 80%;
+}
+
+.BookSessionLocationNotSelectedButton
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 0.75%;
+	padding-bottom: 0.75%;
+	padding-right: 1.8%;
+	padding-left: 1.8%;
+	color: var(--Sonder-olive);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.1vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: auto; /* 100% */
+	background: transparent;
+	border: 1px solid #000;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.BookSessionLocationSelectedButton
+{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 0.75%;
+	padding-bottom: 0.75%;
+	padding-right: 1.8%;
+	padding-left: 1.8%;
+	color: var(--Sonder-yellow, #F9F3D0);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Arial;
+	font-size: 1.1vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: auto; /* 100% */
+	background: var(--Sonder-olive);
+	border: 0px;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.RulesPageContainer
+{
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 7%;
+}
+
+.TherapistBookSession
+{
+	display: flex;
+	width: 100%;
+	height: max-content;
+	flex-direction: row;
+	position: relative;
+}
+
+.TherapistBookSessionImage
+{
+	width: 60%;
+	z-index: 1;
+	position: relative;
+}
+
+.TherapistBookSessionImage img
+{
+	width: 100%;
+	object-fit: fill;
+	height: 100%;
+}
+
+.BookSessionInfoContainer
+{
+	z-index: 2;
+	position: absolute;
+	width: 45%;
+	height: 80%;
+	background: var(--Sonder-white);
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 12%;
+	left: 40%;
+}
+
+.NoTherapists
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 6vh;
+	grid-column: 1 / span 3;
+}
+
+/* @media (max-width: 1280px)
+{
+	@media (min-width: 901px)
+	{
+		.MeetTheTeamHeaderFiltersInput
+		{
+			margin-top: 35%;
+		}
+
+		.HomePageContainer
+		{
+			height: 90%;
+		}
+		.HomePage
+		{
+			height: 75%;
+			align-self: center;
+			justify-self: center;
+			margin-bottom: auto;
+			margin-top: 8%;
+		}
+
+		.TherapyImportanceContainer
+		{
+			height: 40%;
+		}
+
+		.OurServicesContainer
+		{
+			height: auto;
+		}
+
+		.LookingForHelpContainer
+		{
+			height: auto;
+		}
+		
+		.LookingForHelpSearch
+		{
+			height: 8vh;
+		}
+
+		.LookingForHelpItems
+		{
+			margin-bottom: 5%;
+		}
+
+		.WhySonderContainer
+		{
+			height: auto;
+		}
+
+		.OurBlogContainer
+		{
+			height: 45%;
+		}
+
+		.ClientsSayContainer
+		{
+			height: 45%;
+		}
+
+		.HomeFooterSubscribe input
+		{
+			height: 15%;
+		}
+
+		.HomeFooterSubscribe button
+		{
+			height: 12%;
+			top: 39.55%;
+		}
+
+		.HomeFooterSocialsFollowUs
+		{
+			height: 20%;
+		}
+
+		.WhySonderContainerUpgraded
+		{
+			height: auto;
+		}
+
+		.ServicesPageContainer
+		{
+			height: 100%;
+		}
+
+		.OurServicesItemNumber
+		{
+			font-size: 5vh;
+		}
+
+		.OurServicesItemContainer
+		{
+			height: auto !important;
+		}
+
+		.ContactUsPageContainer
+		{
+			height: max-content;
+			margin-bottom: 5%;
+		}
+
+		.OurSpaceContainer
+		{
+			height: auto;
+		}
+
+		.BookSessionInfoCenter
+		{
+			height: 60vh !important;
+		}
+
+		.BookSessionInfo
+		{
+			height: 60% !important;
+		}
+
+		.BookSessionInfoExtra
+		{
+			height: 17vh !important;
+		}
+
+		.BookSessionButton
+		{
+			height: 6.5vh;
+		}
+	}
+} */
+
+@media (max-width: 900px)
+{
+	@media (min-width: 769px)
+	{
+
+		/* .HomePageBookSession
+		{
+			width: 35%;
+			height: 60%;
+		}
+
+		.IVectors
+		{
+			width: 35%;
+			height: 35%;
+		}
+
+		.HomePageBookSessionText h6
+		{
+			font-size: 8vh;
+		}
+
+		.HomePageBookSessionButton button
+		{
+			font-size: 1.8vh;
+		}
+
+		.TherapyImportanceContainer
+		{
+			flex-direction: column;
+		}
+
+		.TherapyImportanceTitle
+		{
+			width: 100%;
+			height: 40%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-left: 0;
+		}
+
+		.TherapyImportanceTitle div
+		{
+			font-size: 5vh;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.TherapyImportanceDesc
+		{
+			height: 60%;
+			width: 50%;
+			align-self: center;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			text-align: center;
+			font-size: 1.5vh;
+			line-height: 2vh;
+			margin-right: 0;
+			margin-bottom: auto;
+		}
+
+		.OurServicesHeader h1
+		{
+			font-size: 4.5vh;
+		}
+
+		.OurServicesItemContainer
+		{
+			width: 40vw;
+			height: 48vh;
+		}
+
+		.OurServicesItemNumber
+		{
+			font-size: 4vh;
+		}
+
+		.OurServicesItemTitle
+		{
+			font-size: 3vh;
+		}
+
+		.OurServicesItemBody
+		{
+			font-size: 1.5vh;
+		}
+
+		.LookingForHelpHeader
+		{
+			height: auto;
+		}
+
+		.LookingForHelpHeader h1
+		{
+			font-size: 4.5vh;
+		}
+
+		.LookingForHelpSearch
+		{
+			height: 6vh;
+		}
+
+		.LookingForHelpSearch img
+		{
+			width: 5%;
+			height: 65%;
+			left: 94%;
+			top: 20%;
+		}
+
+		.LookingForHelpItemsContainer .LookingForHelpItemsButtons .LookingForHelpItemsFindButton
+		{
+			width: 30% !important;
+			font-size: 1.5vh;
+			height: 8vw !important;
+		}
+
+		.LookingForHelpItemsContainer .LookingForHelpItemsButtons .LookingForHelpItemsAboutButton
+		{
+			width: 25% !important;
+			height: 7vw !important;
+			font-size: 1.5vh;
+		}
+
+		.WhySonderItem
+		{
+			width: 70%;
+		}
+
+		.WhySonderItemBookButton
+		{
+			width: 30% !important;
+			font-size: 1.5vh !important;
+			height: 8vw !important;
+		}
+
+		.WhySonderItemContactButton
+		{
+			width: 25% !important;
+			font-size: 1.5vh !important;
+			height: 6vw !important;
+		}
+		
+		.MeetTheTeamItem
+		{
+			width: 80%;
+			justify-self: center;
+		}
+
+		.MeetTheTeamItemName
+		{
+			font-size: 1.3vh;
+		}
+
+		.MeetTheTeamItemDesc
+		{
+			font-size: 0.85vh;
+		}
+
+		.MeetTheTeamItemProfItem
+		{
+			font-size: 0.45vh;
+		}
+
+		.OurBlogItems
+		{
+			width: 90%;
+			height: 70%;
+		}
+
+		.OurBlogHeader h1
+		{
+			font-size: 4.5vh;
+		}
+
+		.OurBlogItemContainer
+		{
+			width: 40%;
+		}
+
+		.OurBlogItemTitle
+		{
+			font-size: 2vh;
+		}
+
+		.OurBlogItemBody
+		{
+			font-size: 1.5vh;
+		}
+
+		.MeetTheTeamItemBookButton
+		{
+			width: 30% !important;
+			font-size: 1.5vh !important;
+			height: 8vw !important;
+		}
+
+		.MeetTheTeamItemContactButton
+		{
+			width: 25% !important;
+			font-size: 1.5vh !important;
+			height: 6vw !important;
+		}
+
+		.OurBlogItemBookButton
+		{
+			width: 30% !important;
+			font-size: 1.5vh !important;
+			height: 8vw !important;
+		}
+
+		.OurBlogItemContactButton
+		{
+			width: 25% !important;
+			font-size: 1.5vh !important;
+			height: 6vw !important;
+		}
+
+		.ClientsSayItems
+		{
+			width: 70%;
+		}
+
+		.HomeFooter
+		{
+			height: 42vh;
+		}
+
+		.TopicContainer
+		{
+			width: 60%;
+			align-self: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.ServicesPageItems .ServicesPageItemsTopPart .OurServicesItemContainer
+		{
+			width: 65% !important;
+		}
+
+		.OurSpaceButton button
+		{
+			height: 7vh;
+		} */
+		.HomePageBookSession
+		{
+			width: 50%;
+		}
+
+		.HomePageBookSessionText h6
+		{
+			font-size: 8vh;
+		}
+
+		.HomePageBookSessionButton button
+		{
+			font-size: 1.8vh;
+		}
+
+		.OurServicesItemContainer
+		{
+			width: 45vw;
+			height: 48vh;
+		}
+
+		.LookingForHelpSearch
+		{
+			height: 8vh;
+		}
+
+		.LookingForHelpSearch img
+		{
+			width: 6%;
+			left: 92%;
+		}
+
+		.LookingForHelpItemsContainer .LookingForHelpItemsButtons .LookingForHelpItemsFindButton
+		{
+			width: 50% !important;
+			font-size: 2.5vh;
+			height: 15vw !important;
+		}
+
+		.LookingForHelpItemsContainer .LookingForHelpItemsButtons .LookingForHelpItemsAboutButton
+		{
+			width: 30% !important;
+			height: 6vw !important;
+			font-size: 2.5vh;
+		}
+
+		.WhySonderItem
+		{
+			width: 70%;
+		}
+
+		.WhySonderItemBookButton
+		{
+			width: 50% !important;
+			font-size: 2.5vh !important;
+			height: 10vw !important;
+		}
+
+		.WhySonderItemContactButton
+		{
+			width: 45% !important;
+			font-size: 2.5vh !important;
+			height: 8vw !important;
+		}
+		
+		.MeetTheTeamItem
+		{
+			width: 80%;
+			justify-self: center;
+		}
+
+		.MeetTheTeamItemName
+		{
+			font-size: 3.4vh;
+		}
+
+		.MeetTheTeamItemDesc
+		{
+			font-size: 2.2vh;
+		}
+
+		.MeetTheTeamItemProfItem
+		{
+			font-size: 1.5vh;
+		}
+
+		.OurBlogItems
+		{
+			width: 60%;
+		}
+
+		.MeetTheTeamItemBookButton
+		{
+			width: 50% !important;
+			font-size: 2.5vh !important;
+			height: 10vw !important;
+		}
+
+		.MeetTheTeamItemContactButton
+		{
+			width: 45% !important;
+			font-size: 2.5vh !important;
+			height: 8vw !important;
+		}
+
+		.OurBlogItemBookButton
+		{
+			width: 50% !important;
+			font-size: 2.5vh !important;
+			height: 9.5vw !important;
+		}
+
+		.OurBlogItemContactButton
+		{
+			width: 45% !important;
+			font-size: 2.5vh !important;
+			height: 8vw !important;
+		}
+
+		.ClientsSayItems
+		{
+			width: 70%;
+		}
+
+		.HomeFooter
+		{
+			height: 42vh;
+		}
+
+		.TopicContainer
+		{
+			width: 60%;
+			align-self: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.ServicesPageItems .ServicesPageItemsTopPart .OurServicesItemContainer
+		{
+			width: 65% !important;
+		}
+
+		.OurSpaceButton button
+		{
+			height: 7vh;
+		}
+	}
+}
+
+@media (max-width: 768px)
+{
+
+	.WhySonderContainer
+	{
+		flex: 0 0 auto;
+		height: fit-content;
+	}
+
+	.WhySonderHeader h1
+	{
+		font-size: 4vh;
+	}
+
+	.IVectors
+	{
+		width: 0;
+		height: 0;
+	}
+
+	.HomePage
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.HomePageBookSessionText h6
+	{
+		font-size: 15vw;
+	}
+
+	.HomePageBookSession
+	{
+		width: 60%;
+		height: 60%;
+		align-self: center;
+		justify-self: center;
+		margin-bottom: 15%;
+	}
+
+	.HomePageBookSessionButton button
+	{
+		font-size: 3.4vw;
+		text-wrap: nowrap;
+	}
+
+	.TherapyImportanceContainer
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.TherapyImportanceTitle
+	{
+		height: 30%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0;
+	}
+
+	.TherapyImportanceTitle div
+	{
+		font-size: 4vh;
+		width: 100%;
+		height: 50%;
+		justify-content: center;
+	}
+
+	.TherapyImportanceTitle div span
+	{
+		display: flex;
+		flex-direction: row;
+		width: auto;
+		text-wrap: nowrap;
+	}
+
+	.TherapyImportanceDesc
+	{
+		font-size: 1.5vh;
+		height: 40%;
+		width: 80%;
+		margin-right: 0;
+		line-height: 5vw;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.TherapyImportanceDesc p 
+	{
+		height: 100%;
+	}
+
+	.OurServicesContainer
+	{
+		height: auto;
+	}
+
+	.OurServicesHeader
+	{
+		margin-top: 15%;
+	}
+
+	.OurServicesHeader h1
+	{
+		font-size: 4vh;
+	}
+
+	.OurServicesItems
+	{
+		margin-top: 5%;
+		flex-direction: row;
+		flex: 0 0 auto;
+		height: 50vh;
+		width: 100%;
+		margin-left: 0;
+		overflow-y: auto;
+		margin-left: 30%;
+	}
+
+	.OurServicesItemContainer
+	{
+		height: 42vh;
+		width: 65vw;
+		align-self: center;
+		margin-left: 0;
+		margin-bottom: 5%;
+		border-top-left-radius: 20in;
+		border-top-right-radius: 20in;
+		margin-right: 15%;
+	}
+
+	.LookingForHelpContainer
+	{
+		height: max-content;
+	}
+
+	.LookingForHelpHeader
+	{
+		margin-top: 15%;
+		height: 20%;
+	}
+
+	.LookingForHelpHeader h1
+	{
+		font-size: 4vh;
+	}
+
+	.LookingForHelpSearch
+	{
+		height: 6vh;
+	}
+
+	.LookingForHelpSearch input
+	{
+		height: 80%;
+		font-size: 1.8vh;
+		text-indent: 5%;
+	}
+
+	.LookingForHelpSearch img
+	{
+		height: 50%;
+		width: 8%;
+		top: 18%;
+		left: 90%;
+	}
+
+	.LookingForHelpItemsMostSearched
+	{
+		height: 10%;
+		font-size: 1.8vh;
+	}
+
+	.LookingForHelpItems
+	{
+		grid-template-columns: auto auto auto;
+		column-gap: 5%;
+	}
+
+	.LookingForHelpItems button
+	{
+		font-size: 1.5vh;
+	}
+
+	.LookingForHelpItemsButtons
+	{
+		height: 12vh;
+		flex-direction: column;
+		margin-top: 5%;
+	}
+
+	.LookingForHelpItemsContainer .LookingForHelpItemsButtons .LookingForHelpItemsFindButton
+	{
+		width: 70% !important;
+		font-size: 5vw;
+		height: 18vw;
+		margin: 2%;
+	}
+
+	.LookingForHelpItemsContainer .LookingForHelpItemsButtons .LookingForHelpItemsAboutButton
+	{
+		width: 50% !important;
+		font-size: 5vw;
+		height: 15vw;
+		margin: 2%;
+	}
+
+	.WhySonderItemsContainer
+	{
+		margin-top: 5%;
+		flex-direction: column;
+		flex: 0 0 auto;
+		height: auto;
+		width: 100%;
+		overflow: auto;
+	}
+	
+	.WhySonderItemsContainerPledge
+	{
+		height: auto;
+	}
+
+	.WhySonderItemBookButton
+	{
+		width: 60% !important;
+	}
+
+	.OurServicesItemNumber
+	{
+		font-size: 3.6vh;
+		height: 15%;
+	}
+
+	.OurServicesItemTitle
+	{
+		font-size: 2vh;
+		height: 25%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.OurServicesItemBody
+	{
+		font-size: 1.5vh;
+		overflow: auto;
+		margin-bottom: 2.5%;
+	}
+
+	.WhySonderItem
+	{
+		width: 100%;
+		align-self: center;
+		margin-bottom: 7.5%;
+	}
+
+	.WhySonderItemsFirstRow
+	{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.WhySonderItemsSecondRow
+	{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.WhySonderItemsFirstRow .WhySonderItem
+	{
+		margin: 5%;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.WhySonderItemsSecondRow .WhySonderItem
+	{
+		margin: 5%;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.WhySonderItemSVG svg
+	{
+		width: 40%;
+		height: 40%;
+	}
+
+	.WhySonderItemTitle
+	{
+		font-size: 3.2vh;
+		margin: 5%;
+	}
+
+	.WhySonderItemBody
+	{
+		font-size: 2.5vh;
+		margin: 5%;
+		margin-top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.WhySonderItemsButtons
+	{
+		flex-direction: column;
+		height: 10%;
+	}
+
+	.WhySonderItemsButtons button 
+	{
+		width: 50%;
+		font-size: 5vw;
+		height: 15vw;
+		margin: 2%;
+	}
+
+	.MeetTheTeamHeader h1
+	{
+		font-size: 4vh;
+	}
+
+	.MeetTheTeamHeader h1 span
+	{
+		font-size: 4.8vh;
+	}
+
+	.MeetTheTeamItemsContainer
+	{
+		grid-template-columns: auto;
+		row-gap: 5vh;
+	}
+
+	.MeetTheTeamItemName
+	{
+		font-size: 2.5vh;
+	}
+
+	.MeetTheTeamItemDesc
+	{
+		font-size: 1.9vh;
+		text-wrap: nowrap;
+	}
+
+	.MeetTheTeamItemProfItem
+	{
+		font-size: 1.1vh;
+	}
+
+	.MeetTheTeamItemProf
+	{
+		column-gap: 1.5vh;
+	}
+
+	.MeetTheTeamItemsButtons
+	{
+		flex-direction: column;
+    	height: 18vh;
+	}
+
+	.MeetTheTeamItemBookButton
+	{
+		font-size: 5vw;
+		margin: 2%;
+		width: 60% !important;
+	}
+
+	.MeetTheTeamItemContactButton
+	{
+		width: 50% !important;
+		font-size: 5vw;
+		margin: 2%;
+	}
+
+	.OurBlogHeader h1
+	{
+		font-size: 4vh;
+	}
+
+	.OurBlogItems
+	{
+		flex-direction: row;
+		margin-left: 0;
+		align-items: center;
+		height: 80%;
+	}
+
+	.OurBlogItemContainer
+	{
+		width: 90%;
+		margin-left: 10%;
+		margin-right: 10%;
+		height: 90%;
+	}
+
+	.OurBlogItemTitle
+	{
+		font-size: 2.5vh;
+		height: auto;
+		padding-top: 5%;
+	}
+
+	.OurBlogItemAuthor
+	{
+		font-size: 1.5vh;
+		height: auto;
+		padding-top: 5%;
+	}
+
+	.OurBlogItemBody
+	{
+		font-size: 1.5vh;
+	}
+
+	.OurBlogItemImage
+	{
+		display: flex;
+		height: 70%;
+	}
+
+	.OurBlogItemImage img
+	{
+		margin-top: auto;
+	}
+
+	.OurBlogItemsButtons
+	{
+		flex-direction: column;
+		height: max-content;
+	}
+
+	.OurBlogItemBookButton
+	{
+		width: 60% !important;
+		font-size: 5vw;
+		height: 7vh !important;
+		margin-bottom: 5%;
+		margin-top: 2%;
+	}
+
+	.OurBlogItemContactButton
+	{
+		width: 50% !important;
+		font-size: 5vw;
+		height: 7vh !important;
+	}
+
+	.ClientsSayHeader h1
+	{
+		font-size: 4vh;
+		width: 90%;
+		margin-left: 7.6%;
+		margin-top: 2.4%;
+		margin-bottom: 5%;
+		flex: 0 0 auto;
+		overflow: auto;
+	}
+
+	.ClientsSayItems
+	{
+		flex-direction: row;
+		margin: 0%;
+		width: 95%;
+		flex: 0 0 auto;
+		overflow: auto;
+		height: 40vh;
+		margin-left: 15%;
+	}
+
+	.ClientsSayItem
+	{
+		width: 85% !important;
+		align-self: center;
+		width: 100%;
+		margin-right: 15%;
+	}
+
+	.ClientsSayItemRating
+	{
+		margin-top: 5%;
+		width: 100%;
+		margin-left: 5%;
+	}
+
+	.ClientsSayItemComments
+	{
+		margin-left: 5%;
+	}
+
+	.ClientsSayItemCommentsTitle
+	{
+		font-size: 1.9vh;
+		text-wrap: nowrap;
+	}
+
+	.ClientsSayItemCommentsBody
+	{
+		font-size: 1.75vh;
+	}
+
+	.ClientsSayItemAuthorName
+	{
+		font-size: 1.9vh;
+	}
+
+	.ClientsSayItemAuthor
+	{
+		margin-left: 5%;
+	}
+
+	.ClientsSayItemAuthorTherapy
+	{
+		font-size: 1.75vh;
+	}
+
+	.FAQHeader h1
+	{
+		font-size: 4vh;
+	}
+
+	.FAQItemHeadingNumber
+	{
+		font-size: 3vh;
+	}
+
+	.FAQItemHeadingQuestion
+	{
+		font-size: 2vh;
+		text-wrap: pretty;
+		margin-left: 5%;
+	}
+
+	.FAQItemAnswerTemp
+	{
+		font-size: 1.5vh;
+		padding: 0;
+		padding-left: 5%;
+	}
+
+	.AboutPageContainer
+	{
+		height: 75vh;
+
+	}
+
+	.AboutPage
+	{
+		height: 60%;
+	}
+
+	.AboutPageOurStory
+	{
+		height: 40%;
+	}
+
+	.AboutPageOurStoryTitle
+	{
+		font-size: 4vh;
+	}
+
+	.AboutPageDescFirstPart, .AboutPageDescSecPart 
+	{
+		font-size: 1.25vh;
+		line-height: 3vw;
+	}
+
+	.AboutPageOurStory
+	{
+		height: 70%;
+	}
+
+	.AboutPageOurStoryDesc
+	{
+		height: 100%;
+	}
+
+	.AboutPageVideo
+	{
+		height: 80%;
+		width: 90vw;
+		justify-self: center;
+		align-items: center;
+	}
+
+	.AboutPageVideo .IFrameClone
+	{
+		justify-self: center;
+		align-self: center;
+		width: 100%;
+		margin-right: 4vw;
+	}
+
+	.WhySonderContainerUpgraded
+	{
+		height: auto;
+	}
+
+	.HomeFooter
+	{
+		flex-direction: column;
+		height: 38vh;
+	}
+
+	.HomeFooterInfo
+	{
+		width: 100%;
+		order: 3;
+		margin-bottom: 2.5%;
+	}
+
+	.HomeFooterInfoLogo
+	{
+		width: 20%;
+		align-self: flex-start;
+		margin-left: 5%;
+	}
+
+	.HomeFooterInfoLogo svg
+	{
+		margin-top: auto;
+		height: auto;
+	}
+
+	.HomeFooterInfoCopyRights
+	{
+		font-size: 1vh;
+		margin-left: 5%;
+	}
+
+	.HomeFooterSocials
+	{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 5%;
+	}
+
+	.HomeFooterSocialsFollowUs
+	{
+		font-size: 2vh;
+		margin-bottom: 2.5%;
+	}
+
+	.HomeFooterSocialsIcons
+	{
+		width: 100%;
+		margin-left: 5%;
+	}
+
+	.HomeFooterSocialsIcons svg
+	{
+		width: 80%;
+	}
+
+	.HomeFooterSocialsIcons
+	{
+		width: 100%;
+	}
+
+	.HomeFooterSubscribe
+	{
+		width: 100%;
+		height: 75%;
+	}
+
+	.HomeFooterSubscribe input
+	{
+		width: 80%;
+		height: 5.5vh;
+		left: 10%;
+		font-size: 1.8vh;
+	}
+
+	.HomeFooterSubscribe label
+	{
+		left: 10%;
+		font-size: 1.8vh;
+		top: 20%;
+	}
+
+	.HomeFooterSubscribe button
+	{
+		width: 18%;
+		height: 4.6vh;
+		left: 70.8%;
+		top: 41.2%;
+		font-size: 1.5vh;
+	}
+
+	.MeetTheTeamHeaderContainer
+	{
+		width: 100%;
+		height: 70%;
+	}
+
+	.MeetTheTeamHeaderDesc
+	{
+		font-size: 1.5vh;
+		margin-right: 5%;
+		width: 90%;
+		height: auto;
+	}
+
+	.MeetTheTeamHeader
+	{
+		flex-direction: column;
+	}
+
+	.MeetTheTeamHeaderFilters
+	{
+		justify-content: flex-end;
+		align-items: center;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		height: 30%;
+	}
+
+	.MeetTheTeamHeaderFiltersInput label, .MeetTheTeamHeaderFiltersInput select
+	{
+		font-size: 1.5vh;
+	}
+
+	.MeetTheTeamHeaderFiltersInput select
+	{
+		width: 15vh;
+	}
+
+	.TherapistsPledgeDesc
+	{
+		font-size: 1.5vh;
+		width: 80%;
+	}
+
+	.BlogsMain
+	{
+		flex-direction: column;
+	}
+
+	.BlogsMainInfo
+	{
+		height: calc(20vw + 25vh);
+	}
+
+	.BlogsMainInfoService
+	{
+		height: 10%;
+	}
+
+	.BlogsMainInfoServiceName
+	{
+		font-size: 1.1vh;
+		width: 30%;
+	}
+
+	.BlogsMainInfoServiceTime
+	{
+		width: 20%;
+		font-size: 1.4vh;
+	}
+
+	.BlogsMainInfoTitle
+	{
+		height: auto;
+		font-size: 2.8vh;
+	}
+
+	.BlogsMainInfoDesc
+	{
+		font-size: 1.5vh;
+		overflow: auto;
+		margin-bottom: 5%;
+	}
+
+	.BlogsMainInfoButton button
+	{
+		font-size: 1.2vh;
+	}
+
+	.TopicContainer
+	{
+		grid-template-columns: auto;
+		margin-right: 10%;
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	.TopicContainer
+	{
+		margin-bottom: 5vh;
+	}
+
+	.TopicMain
+	{
+		height: 60vh;
+	}
+
+	.TopicMainInfoServiceName
+	{
+		font-size: 1.5vh;
+		width: 40%;
+	}
+
+	.TopicMainImage
+	{
+		height: 50%;
+		overflow: hidden;
+	}
+
+	.TopicMainInfoServiceTime
+	{
+		font-size: 1.2vh;
+	}
+
+	.TopicMainInfoTitle
+	{
+		font-size: 2.5vh;
+	}
+
+	.TopicMainInfoDesc
+	{
+		height: auto;
+		font-size: 2vh;
+	}
+
+	.TopicMainInfoButton button
+	{
+		font-size: 1.5vh;
+	}
+
+	.TopicMainInfoService
+	{
+		height: 10%;
+	}
+
+	.ServicesPageHeaderTitle
+	{
+		font-size: 4vh;
+	}
+
+	.ServicesPageContainer
+	{
+		height: max-content;
+	}
+
+	.ServicesPageItemsTopPart, .ServicesPageItemsBotPart
+	{
+		grid-template-columns: auto;
+	}
+
+	.ServicesPageItemsTopPart .OurServicesItemContainer, .ServicesPageItemsBotPart .OurServicesItemContainer
+	{
+		margin-right: 0%;
+	}
+
+	.ServicesPageItemsTopPart .OurServicesItemContainer, .ServicesPageItemsBotPart .OurServicesItemContainer
+	{
+		width: 90% !important;
+		justify-self: center !important;
+		margin-bottom: 15%;
+	}
+
+	.OurServicesItemNumber
+	{
+		font-size: 3.8vh !important;
+	}
+	
+	.OurServicesItemTitle
+	{
+		font-size: 3vh !important;
+	}
+
+	.OurServicesItemBody
+	{
+		font-size: 2vh !important;
+	}
+
+	.ContactUsPageContainer
+	{
+		height: auto;
+		margin-bottom: 10%;
+	}
+
+	.ContactUsPageOurStory
+	{
+		height: auto;
+	}
+
+	.ContactUsPageOurStoryTitle
+	{
+		font-size: 4vh;
+	}
+
+	.ContactUsPageOurStoryDesc
+	{
+		font-size: 1.5vh;
+	}
+
+	.ContactUsContact
+	{
+		flex-direction: column;
+	}
+
+	.ContactUsContactMap
+	{
+		margin: 0;
+		width: 90%;
+		align-self: center !important;
+		margin-bottom: 5%;
+	}
+
+	.ContactUsContactMapInfo
+	{
+		font-size: 1.3vh;
+	}
+
+	.ContactUsContactMessage
+	{
+		align-self: center !important;
+		width: 95%;
+		height: 80vh;
+	}
+
+	.ContactUsContactMessageTitle
+	{
+		font-size: 3.2vh;
+		height: 10%;
+	}
+
+	.ContactUsContactMessageInfo
+	{
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto auto auto auto auto;
+		justify-content: stretch;
+		height: 75%;
+	}
+
+	.ContactUsContactMessageCredentials
+	{
+		grid-column: auto !important;
+		width: 100% !important;
+	}
+
+	.ContactUsContactMessageCredentials input, .ContactUsContactMessageCredentials select
+	{
+		width: 100%;
+		font-size: 1.8vh;
+	}
+
+	.form-control
+	{
+		font-size: 1.8vh;
+	}
+
+	.ContactUsContactMessageCredentials input::placeholder
+	{
+		font-size: 1.8vh;
+	}
+
+	.ContactUsContactMessageCredentials label
+	{
+		font-size: 1.8vh;
+	}
+
+	.ContactUsContactMessageMessage
+	{
+		grid-row: span 4 !important;
+	}
+
+	.ContactUsContactMessageButton
+	{
+		flex-direction: column;
+	}
+
+	.ContactUsContactMessageButton button
+	{
+		width: 65%;
+		text-wrap: nowrap;
+		font-size: 3.8vw;
+		margin-bottom: 2%;
+		margin-top: 2%;
+	}
+
+	.OurSpaceContainer
+	{
+		height: auto;
+	}
+
+	.OurSpaceHeading h1
+	{
+		font-size: 3.7vh;
+	}
+
+	.OurSpaceHeading h1 span
+	{
+		font-size: 4vh;
+	}
+
+	.OurSpaceImages
+	{
+		flex-direction: column;
+	}
+
+	.OurSpaceImagesLeft
+	{
+		flex-direction: row;
+		width: 100%;
+		height: auto;
+	}
+
+	.OurSpaceImagesLeft img
+	{
+		width: 45%;
+		height: 100%;
+		margin: 0;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+	}
+
+	.OurSpaceImagesRight
+	{
+		flex-direction: row;
+		width: 100%;
+		height: auto;
+	}
+
+	.OurSpaceImagesRight img
+	{
+		width: 45%;
+		height: 100%;
+		margin: 0;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+		margin-bottom: 5%;
+	}
+
+	.OurSpaceImagesMid
+	{
+		width: 100%;
+	}
+
+	.OurSpaceButton button
+	{
+		width: 55%;
+		text-wrap: nowrap;
+		font-size: 3.8vw;
+		height: 5vh;
+		margin-top: 2%;
+	}
+
+	.RulesPageContainer
+	{
+		height: auto;
+	}
+
+	.BookSessionInfo
+	{
+		grid-template-columns: auto !important;
+		grid-template-rows: auto auto auto !important;
+		justify-content: stretch;
+		height: 30vh !important;
+	}
+
+	.BookSessionInfoCredentials
+	{
+		grid-column: auto !important;
+    	width: 100% !important;
+	}
+
+	.BookSessionInfoCredentials input, .BookSessionInfoCredentials select
+	{
+		width: 100%;
+		font-size: 2vh;
+	}
+
+	.BookSessionInfoCredentials input::placeholder
+	{
+		font-size: 2vh;
+	}
+
+	.BookSessionInfoCredentials label
+	{
+		font-size: 2vh;
+	}
+
+	.BookSessionTitle
+	{
+		font-size: 4vh;
+	}
+
+	.BookSessionButton
+	{
+		height: 14.4vh;
+	}
+
+	.BookSessionButton button
+	{
+		width: 65%;
+		text-wrap: nowrap;
+		font-size: 3.8vw;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		height: 50%;
+	}
+
+	.SingleServicePage
+	{
+		flex-direction: column;
+	}
+
+	.SingleServicePageShapes
+	{
+		width: 60%;
+		height: 30%;
+		justify-self: center;
+		align-self: center;
+
+	}
+
+	.ICircle
+	{
+		width: 8vh;
+		height: 8vh;
+	}
+
+	.SingleServicePage
+	{
+		height: 90%;
+	}
+
+	.SingleServicePageDetails
+	{
+		width: 90%;
+		height: 100%;
+	}
+
+	.SingleServicePageHeader
+	{
+		height: auto;
+	}
+
+	.SingleServicePageHeaderTitle
+	{
+		height: auto;
+	}
+
+	.SingleServicePageHeaderTitle h1
+	{
+		font-size: 4vh;
+	}
+
+	.SingleServicePageHeaderDesc
+	{
+		font-size: 1.4vh;
+		height: auto;
+		margin-bottom: 5%;
+	}
+
+	.SingleServicePagePoints
+	{
+		margin-top: 5%;
+	}
+
+	.SingleServicePagePoints li
+	{
+		font-size: 1.5vh;
+	}
+
+	.SingleServicePageBook button
+	{
+		width: 65%;
+		text-wrap: nowrap;
+		font-size: 3.8vw;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		height: 35%;
+	}
+
+	.ArticleMainInfoServiceName
+	{
+		width: 25%;
+		font-size: 1.2vh;
+	}
+
+	.ArticleMainInfoServiceTime
+	{
+		font-size: 1.3vh;
+	}
+
+	.ArticleMainInfoTitle
+	{
+		font-size: 3vh;
+		text-align: center;
+	}
+
+	.ArticleText
+	{
+		font-size: 1.8vh;
+	}
+
+	.ReadMoreTitle h1 span
+	{
+		font-size: 4vh;
+	}
+
+	.ReadMoreTitle h1
+	{
+		font-size: 3.7vh;
+	}
+
+	.TherapistProfileContainer
+	{
+		height: auto !important;
+	}
+
+	.TherapistProfileImage
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.TherapistProfileImage img
+	{
+		width: 100%;
+		object-fit: fill;
+	}
+
+	.TherapistProfile
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.TherapistProfileInfo
+	{
+		width: 100%;
+	}
+
+	.TherapistProfileName
+	{
+		font-size: 4vh;
+	}
+
+	.TherapistProfileDesc
+	{
+		width: 100%;
+		font-size: 2vh;
+	}
+
+	.TherapistProfileServices
+	{
+		width: 60%;
+		column-gap: 4vw;
+		height: auto;
+	}
+
+	.TherapistProfileService
+	{
+		width: 100%;
+		font-size: 1.2vh;
+		height: max-content;
+	}
+
+	.TherapistProfileButton
+	{
+		width: 50%;
+		height: 6vh;
+		margin-top: 5%;
+	}
+
+	.TherapistProfileButton button
+	{
+		font-size: 2vh;
+	}
+
+	.TestimonialsContainer
+	{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.TestimonialsText
+	{
+		font-size: 2.8vh;
+	}
+
+	.TestimonialsDesc
+	{
+		align-self: flex-end;
+		font-size: 1.3vh;
+		width: 60%;
+	}
+
+	.NoTherapists
+	{
+		margin-top: 10%;
+		font-size: 3.5vh;
+	}
+}
+
+@media (width: 1024px)
+{
+	@media (height: 768px)
+	{
+		.HomePageContainer
+		{
+			height: 95%;
+		}
+		.HomePage
+		{
+			height: 75%;
+			align-self: center;
+			justify-self: center;
+			margin-bottom: auto;
+			margin-top: 8%;
+		}
+
+		.TherapyImportanceContainer
+		{
+			height: 40%;
+		}
+
+		.OurServicesContainer
+		{
+			height: 45%;
+		}
+
+		.LookingForHelpContainer
+		{
+			height: 45%;
+		}
+
+		.WhySonderContainer
+		{
+			height: 48%;
+		}
+
+		.OurBlogContainer
+		{
+			height: 45%;
+		}
+
+		.ClientsSayContainer
+		{
+			height: 45%;
+		}
+
+		.HomeFooterSubscribe input
+		{
+			height: 15%;
+		}
+
+		.HomeFooterSubscribe button
+		{
+			height: 12%;
+			top: 39.55%;
+		}
+
+		.HomeFooterSocialsFollowUs
+		{
+			height: 20%;
+		}
+
+		.WhySonderContainerUpgraded
+		{
+			height: auto;
+		}
+
+		.ServicesPageContainer
+		{
+			height: 100%;
+		}
+
+		.OurServicesItemContainer
+		{
+			height: 33vh !important;
+		}
+
+		.ContactUsPageContainer
+		{
+			height: 118%;
+		}
+
+		.OurSpaceContainer
+		{
+			height: 90%;
+		}
+
+		.BookSessionInfoCenter
+		{
+			height: 60vh !important;
+		}
+
+		.BookSessionInfo
+		{
+			height: 40vh !important;
+		}
+
+		.BookSessionInfoExtra
+		{
+			height: 17vh !important;
+		}
+
+		.BookSessionButton
+		{
+			height: 6.5vh;
+		}
+	}
+}
+
+/* @media (max-width: 768px)
+{
+	@media (min-height: 1024px)
+	{
+		.HomePageContainer
+		{
+			height: 95%;
+		}
+		.HomePage
+		{
+			height: 75%;
+			align-self: center;
+			justify-self: center;
+			margin-bottom: auto;
+			margin-top: 8%;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.IVectors
+		{
+			margin-left: 0;
+			height: 45%;
+			width: 35%;
+		}
+
+		.HomePageBookSession
+		{
+			margin-right: 0;
+			margin-top: 5%;
+			width: 32%;
+			height: 100%;
+		}
+
+		.HomePageBookSessionText h6
+		{
+			font-size: 6vh;
+		}
+
+		.HomePageBookSessionButton button
+		{
+			font-size: 1.5vh;
+		}
+
+		.TherapyImportanceContainer
+		{
+			height: 30%;
+		}
+
+		.OurServicesContainer
+		{
+			height: 45%;
+		}
+
+		.OurServicesItems
+		{
+			height: 50%;
+		}
+
+		.LookingForHelpContainer
+		{
+			height: 35%;
+		}
+
+		.LookingForHelpSearch img
+		{
+			top: 30%;
+		}
+
+		.WhySonderContainer
+		{
+			height: 35%;
+		}
+
+		.OurServicesItemContainer
+		{
+			height: 20vh !important;
+		}
+
+		.LookingForHelpItems
+		{
+			grid-template-columns: auto auto auto auto;
+		}
+
+		.LookingForHelpItems button
+		{
+			height: 4vh;
+			font-size: 1.2vh;
+		}
+
+		.OurServicesItemContainer
+		{
+			justify-self: center;
+			height: 20%;
+		}
+
+		.OurBlogContainer
+		{
+			height: 35%;
+		}
+
+		.ClientsSayContainer
+		{
+			height: 30%;
+		}
+
+		.ClientsSayItemRating
+		{
+			height: 15%;
+			width: 60%;
+		}
+
+		.ClientsSayItemRating svg
+		{
+			width: 100%;
+			height: 100%;
+		}
+
+		.FAQItemHeadingNumber
+		{
+			font-size: 3vh;
+		}
+
+		.FAQItemHeadingQuestion
+		{
+			font-size: 2vh;
+		}
+
+		.FAQItemAnswerTemp
+		{
+			font-size: 1.5vh;
+		}
+
+		.HomeFooterInfo
+		{
+			width: 15%;
+		}
+
+		.HomeFooterSubscribe label
+		{
+			font-size: 1.3vh;
+		}
+
+		.HomeFooterSubscribe input
+		{
+			width: 70%;
+			height: 12.5%;
+			font-size: 2vw;
+		}
+
+		.HomeFooterSubscribe button
+		{
+			width: 20.5%;
+			height: 10%;
+			font-size: 1.5vw;
+			left: 68%;
+			top: 39.35%;
+		}
+
+		.HomeFooterSocialsFollowUs
+		{
+			height: 15%;
+			font-size: 2vw;
+		}
+
+		.HomeFooterSocialsIcons
+		{
+			width: 80%;
+		}
+
+		.HomeFooterSocialsIcons svg
+		{
+			width: 100%;
+		}
+	}
+} */
+
+@media (max-height: 699px)
+{
+	@media (min-width: 1650px)
+	{
+		.HomeHeaderContainer
+		{
+			height: 7%;
+		}
+
+		.PagesHeaderContainer
+		{
+			height: 7%;
+		}
+
+		.ServicesPageContainer .PagesHeaderContainer
+		{
+			height: 7%;
+		}
+
+		.HomePageBookSession
+		{
+			height: 100%;
+			margin-bottom: 5%;
+		}
+
+		.IVectors
+		{
+			height: 80%;
+		}
+
+		.WhySonderContainer
+		{
+			height: auto;
+		}
+
+		.WhySonderItemsContainer
+		{
+			margin-top: 2.5%;
+			flex-direction: row;
+			height: auto;
+		}
+
+		.OurServicesContainer
+		{
+			height: 50%;
+		}
+
+		.LookingForHelpContainer
+		{
+			height: 50%;
+		}
+
+		.LookingForHelpSearch
+		{
+			height: 15vh;
+		}
+
+		.LookingForHelpItemsButtons
+		{
+			height: 15vh;
+		}
+
+		.WhySonderContainerUpgraded
+		{
+			height: auto;
+		}
+
+		.OurServicesItemContainer
+		{
+			height: 45vh !important;
+		}
+
+		.ContactUsPageContainer
+		{
+			height: 140%;
+		}
+
+		.OurSpaceContainer
+		{
+			height: 125%;
+		}
+
+		.BookSessionInfo
+		{
+			height: 30vh !important;
+		}
+
+		.BookSessionButton
+		{
+			height: 12vh !important;
+		}
+	}
+}
+
+.MuiDrawer-paperAnchorLeft
+{
+	text-decoration: none !important;
+}
+
+.MuiDrawer-paperAnchorLeft
+{
+	height: 100% !important;
+}
+
+.MuiDrawer-paperAnchorLeft
+{
+	width: 70% !important;
+}
+
+.MuiDrawer-paperAnchorLeft
+{
+	background: var(--Sonder-olive) !important;
+}
+
+.MuiDrawer-paperAnchorLeft a, .MuiDrawer-paperAnchorLeft ul li, .MuiDrawer-paperAnchorLeft span
+{
+	font-size: 2.5vh !important;
+	color: var(--Sonder-yellow) !important;
+	text-decoration: underline !important;
+	text-decoration-color: var(--Sonder-yellow) !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.25vw !important;
+	text-underline-offset: 1vw !important;
+	text-wrap: nowrap !important;
+}
+
+.MuiDrawer-paperAnchorLeft ul li
+{
+	margin-bottom: 5% !important;
+}
+
+.MuiDrawer-paperAnchorLeft ul
+{
+	margin-left: 2.5vw !important;
+	margin-top: 2.5vw !important;
+}
